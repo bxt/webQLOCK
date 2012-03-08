@@ -124,9 +124,9 @@
       Math.max(window.innerHeight-464,0)/2+50+"px";
   }
   
-  document.getElementById("ff").addEventListener('click', fastForward);
-  window.addEventListener('load', ready);
-  window.addEventListener('resize', resize);
+  document.getElementById("ff").addEventListener('click', fastForward, false);
+  window.addEventListener('load', ready, false);
+  window.addEventListener('resize', resize, false);
   resize();
   
 })();
